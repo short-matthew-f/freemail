@@ -1,0 +1,27 @@
+<main id="blog">
+  <h1>Welcome to Easy Blogger</h1>
+
+  <div id="new">
+  </div>
+
+  <div id="posts">
+  </div>
+</main>
+
+<script id="post-form-template" type="text/x-handlebars-template">
+  <form class="blog-entry">
+    <input type="text" name="title" placeholder="Title">
+    <textarea name="content"></textarea>
+    <input type="submit" value="Add Entry">
+  </form>
+</script>
+
+<script id="post-show-template" type="text/x-handlebars-template">
+  <div data-id="{{id}}" class="post">
+    <h1 class="title">{{title}}</h1>
+    <div class="content">
+      {{content}}
+    </div>
+    <div class="button delete">Delete</delete>
+  </div>
+</script>
